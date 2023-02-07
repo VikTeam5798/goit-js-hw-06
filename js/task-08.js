@@ -4,7 +4,6 @@ const refs = {
     password: document.querySelector('[type="password"]'),
     btn: document.querySelector('[type="submit"]')
 }
-console.log(refs);
 refs.form.addEventListener('submit', onFormSubmit)
 
 function onFormSubmit(event) {
