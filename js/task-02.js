@@ -7,9 +7,7 @@ const ingredients = [
   'Condiments',
 ];
 const ingredientsListEl = document.querySelector('#ingredients');
-ingredients.forEach(Element => {
-  const newListEl = document.createElement("li")
-  newListEl.textContent = Element;
-  newListEl.classList.add('item')
-  ingredientsListEl.append(newListEl)
-})
+
+  const newListEl = ingredients.map((ingredient) => `<li class="list__item">${ingredient}</li>`).join('');
+
+ingredientsListEl.insertAdjacentHTML("beforeend", newListEl);
