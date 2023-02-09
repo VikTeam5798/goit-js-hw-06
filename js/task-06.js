@@ -12,18 +12,12 @@ function isValidationTrue() {
 
     if (inputLengthEl !== dataValueEl) {
         inputEl.classList.add('invalid')
-
-        if (inputEl.classList.contains('valid')) {
-            inputEl.classList.remove('valid')
+        inputEl.classList.remove('valid')
         }
-    }
 
     else {
         inputEl.classList.add('valid')
-
-        if (inputEl.classList.contains('invalid')) {
-            inputEl.classList.remove('invalid')
+        inputEl.classList.remove('invalid')
         }
-    }
 }
 
